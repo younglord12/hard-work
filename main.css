@@ -1,0 +1,107 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+.slideUP{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: chartreuse;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    font-size: 100px;
+    animation: rot 3s 1 linear;
+}
+@keyframes rot {
+    from {
+            transform: rotate(0deg)
+                       translate(-200px)
+                       rotate(0deg);
+            background: purple;
+            border-radius: 0%;
+    }
+    to {
+            transform: rotate(360deg)
+                       translate(-200px)
+                       rotate(-360deg);
+            background: red;
+            border-radius: 50%;
+    }
+}
+.slideDown{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: darkorchid;
+    top: 50%;
+    left: 50%;
+    animation: circle 3s 1 linear;
+}
+@keyframes circle {
+    from {
+            transform: rotate(0deg)
+                       translate(200px)
+                       rotate(0deg);
+            background: darkkhaki;
+            border-radius: 0%;
+    }
+    to {
+            transform: rotate(360deg)
+                       translate(200px)
+                       rotate(-360deg);
+            background: yellow;
+            border-radius: 50%;
+    }
+}
+.slideLeft{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: burlywood;
+    top: 50%;
+    left: 50%;
+    animation: left 3s 1 linear;
+}
+@keyframes left {
+    from {
+            transform: rotate(0deg)
+                       translate(0,200px)
+                       rotate(0deg);
+                       background: aqua;
+                       border-radius: 0%;
+    }
+    to {
+            transform: rotate(360deg)
+                       translate(0,200px)
+                       rotate(-360deg);
+                       background: rebeccapurple;
+                       border-radius: 50%;
+    }
+}
+.slideRight{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: darkorchid;
+    top: 50%;
+    left: 50%;
+    animation: right 3s 1 linear;
+}
+@keyframes right {
+    from {
+            transform: rotate(0deg)
+                       translate(0,-200px)
+                       rotate(0deg);
+                       background: red;
+                       border-radius: 0%;
+    }
+    to {
+            transform: rotate(360deg)
+                       translate(0,-200px)
+                       rotate(-360deg);
+                       background: blueviolet;
+                       border-radius: 50%;
+    }
+}
+
